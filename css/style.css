@@ -22,18 +22,20 @@ nav ul{
 
 nav li{
     display: inline-block;
-    margin-left: 10px;
+    margin-left: 15px;
     text-transform: uppercase;
     font-weight: bold;
     font-size: 22px;
 }
 
 nav a{
+    text-shadow: 0 0 1px #000;
     text-decoration: none;
     color: #000
 }
 
 nav a:hover{
+    text-shadow: 0 0 1px #059bc0;
     color: #059bc0;
 }
 
@@ -54,7 +56,7 @@ main p{
     margin: 1em auto 0 auto;
 }
 
-.titulo-principal{
+.title-main{
     text-align: center;
     margin: 2em auto;
     font-size: 2em;
@@ -62,11 +64,11 @@ main p{
     clear: left;
 }
 
-.titulo-principal:before{
+.title-main::before{
     content: "- ";
 }
 
-.titulo-principal:after{
+.title-main::after{
     content: " -";
 }
 
@@ -145,18 +147,18 @@ main p{
     margin: 2em auto;
 }
 
-/* PRODUTOS */
+/* product */
 
-.produtos{
+.product{
     width: 940px;
     margin: 3em auto;
 }
 
-.lista-produtos{
+.product-list{
     text-align: center;
 }
 
-.lista-produtos li{
+.product-list li{
     display: inline-block;
     vertical-align: top;
     padding: 10px;
@@ -169,27 +171,28 @@ main p{
     transition: 0.5s;
 }
 
-.lista-produtos li:hover{
+.product-list li:hover{
     border-color: #059bc0;
     opacity: 1;
     transform: scale(1.02);
 }
 
-.lista-produtos h2{
+.product-list h2{
     font-size: 30px;
     font-weight: bold;
     margin-top: 10px;
+    transition: 0.5s;
 }
 
-.lista-produtos li:hover h2{
+.product-list li:hover h2{
     font-size: 35px;
 }
 
-.desc-produto{
+.product-desc{
     font-size: 20px;
 }
 
-.preco-produto{
+.product-price{
     font-size: 22px;
     font-weight: bold;
     margin-top: 20px;
@@ -215,6 +218,12 @@ form label, form legend{
     margin-bottom: 30px;
     border: 2px solid #000;
     border-radius: 5px;
+}
+
+.input-padrao:focus, form textarea:focus{
+    outline: none;
+    border: 2px solid #059bc0;
+    color: #fff;
 }
 
 form fieldset{
